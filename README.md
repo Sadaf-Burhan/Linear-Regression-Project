@@ -6,16 +6,18 @@ The original objective of analysis was to understand the interactions between GD
 Through analysis, we arrived at the conclusion that our variables involve multiple and complex causations. This analysis indicates that GDP growth is not a confounder for the dataset reviewed. It concludes that the relation among our variables follow a chain pattern. In Structural Causal Model, Y = Life Expectancy, X = GDP Growth & Z = Wine Consumption
 
 <ul>
-    <li>●	𝑍 and 𝑌 are dependent. The higher the wine consumption, the lower the life expectancy.</li>
-    <li>●	X and Y are dependent. The higher the GDP growth, the lower the life expectancy</li>
-    <li>●	X and Z are likely dependent. GDP growth should result in lower wine consumption.</li>
-    <li>●	Z and X are independent, conditional on Y. If we already know the life expectancy, then also knowing the GDP growth shouldn’t give us any better idea of the wine consumption.</li>
+    <li>𝑍 and 𝑌 are dependent. The higher the wine consumption, the lower the life expectancy.</li>
+    <li>X and Y are dependent. The higher the GDP growth, the lower the life expectancy</li>
+    <li>X and Z are likely dependent. GDP growth should result in lower wine consumption.</li>
+    <li>Z and X are independent, conditional on Y. If we already know the life expectancy, then also knowing the GDP growth shouldn’t give us any better idea of the wine consumption.</li>
 </ul>
 The output of OLS modelling showed wine consumption has a negative correlation with life expectancy, meaning that as wine consumption increases, there is a decrease in life expectancy. GDP growth has a negative correlation with life expectancy, meaning that as GDP growth increases, life expectancy decreases. This relationship is unexpected, but the weakness of our model (R-squared value of 0.187) tells us that a change in GDP growth does not always result in an impact to life expectancy. GDP growth also has a positive correlation with wine consumption, meaning that as GDP increases, wine consumption increases.            
 
 Several different hypotheses were tested to arrive at this conclusion. Through analysis, it was found that wine consumption is an endogenous variable. Potential exogenous variables that were not analyzed as part of this analysis, that could be explored to uncover stronger correlations include:
-●	Alcohol consumption among individuals aged 0-14 (alcohol consumption data captures age 15+ and life expectancy data is from at birth)
-●	Sub-regional analysis of alcohol consumption, GDP growth and life expectancy (country or geographic region within Europe)
-●	Income inequality, with respect to population.
+<ul>
+    <li>Alcohol consumption among individuals aged 0-14 (alcohol consumption data captures age 15+ and life expectancy data is from at birth)</li>
+    <li>Sub-regional analysis of alcohol consumption, GDP growth and life expectancy (country or geographic region within Europe)</li>
+    <li>Income inequality, with respect to population.</li>
+</ul>
  
 
